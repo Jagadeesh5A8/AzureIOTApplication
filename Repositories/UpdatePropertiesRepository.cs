@@ -9,8 +9,8 @@ namespace AzureIOTApplication.Repositories
     public class UpdatePropertiesRepository
     {
         private readonly string _IoTHubConnectionString;
-        private static string connectionString = "HostName=Jdhuba8.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=27M+VGszWeXM38MfiF51mZSu9WE413eLMu0qTY+2TVo=";
-        private static string deviceConnectionstring = "HostName=Jdhuba8.azure-devices.net;DeviceId=device1;SharedAccessKey=DAw1qKyfQwj8V7fdJ/1D6IFbJ9UKQjiv0HEfNfjfxp8=";
+        private static string connectionString = "HostName=Jdhuba8.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=3JPuPX3UIv3SrJR8u3GhfXcCIrdwv9fmnjnxBlzhUmo=";
+        private static string deviceConnectionstring = "HostName=Jdhuba8.azure-devices.net;DeviceId=device1;SharedAccessKey=57WGcKwy1far+5rxa9E51dsg0IiIt7vVGCLAdhHQUzk=";
 
         public UpdatePropertiesRepository(IConfiguration configuration)
         {

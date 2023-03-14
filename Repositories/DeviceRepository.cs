@@ -5,7 +5,7 @@ namespace AzureIOTApplication.Repositories
 {
     public class DeviceRepository
     {
-        private static string connectionString = "HostName=Jdhuba8.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=27M+VGszWeXM38MfiF51mZSu9WE413eLMu0qTY+2TVo=";
+        private static string connectionString = "HostName=Jdhuba8.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=3JPuPX3UIv3SrJR8u3GhfXcCIrdwv9fmnjnxBlzhUmo=";
         private static RegistryManager registryManager;
         public DeviceRepository()
         {
