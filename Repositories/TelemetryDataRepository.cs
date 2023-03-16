@@ -7,7 +7,7 @@ namespace AzureIOTApplication.Repositories
 {
     public class TelemetryDataRepository
     {
-        private static string connectionString = "HostName=Jdhuba8.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=VMGOq3/0kK2SGudsWpAU2KdyY6Aa9CAPOdwSUbH3pz8=";
+        private static string connectionString = "HostName=Jdhuba8.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=RBtRTDD1uQNtsB5Ujb+JgTjbPEsyHCYG8IL7M2XGMJ0=";
         public static async Task<bool> IsDeviceAvailable(string deviceId)
         {
             var registrymanager = RegistryManager.CreateFromConnectionString(connectionString);
