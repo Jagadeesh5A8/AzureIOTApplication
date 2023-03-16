@@ -9,16 +9,16 @@ namespace AzureIOTApplication.Repositories
     public class UpdatePropertiesRepository
     {
         private readonly string _IoTHubConnectionString;
-        private static string connectionString = "HostName=Jdhuba8.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=RBtRTDD1uQNtsB5Ujb+JgTjbPEsyHCYG8IL7M2XGMJ0=";
+        
         private static string deviceConnectionstring = "HostName=Jdhuba8.azure-devices.net;DeviceId=device1;SharedAccessKey=RJVj1L/T85mu2Y4YFW4s4RJW0J2DM0W3M99vqeLvw+0=";
 
         public UpdatePropertiesRepository(IConfiguration configuration)
         {
             _IoTHubConnectionString = configuration.GetValue<string>("IotHubConnectionString");
         }
-        public static async Task<bool> IsDeviceAvailable(string deviceId)
+        public  async Task<bool> IsDeviceAvailable(string deviceId)
         {
-            var registrymanager = RegistryManager.CreateFromConnectionString(connectionString);
+            var registrymanager = RegistryManager.CreateFromConnectionString(_IoTHubConnectionString);
             Device device = await registrymanager.GetDeviceAsync(deviceId);
             if (device.Status == DeviceStatus.Enabled)
             {
